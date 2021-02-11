@@ -22,7 +22,7 @@ Adafruit_HT1632LEDMatrix matrix = Adafruit_HT1632LEDMatrix(
 #define HEIGHT matrix.height()
 #define WIDTH matrix.width()
 
-#define MSG_COUNT 6
+#define MSG_COUNT 7
 char* messages[] = {
     "???",
     "THE BEST",
@@ -30,6 +30,7 @@ char* messages[] = {
     "ON ZOOM",
     "OVER IT",
     "BUSY AF",
+    "TESTING",
 };
 
 #ifndef HUMAN
@@ -123,4 +124,3 @@ void loop() {
         matrix.writeScreen();
     }
 }
-
